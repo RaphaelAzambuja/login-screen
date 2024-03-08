@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Tela de Login</title>
+
+  <script src="./script.js" defer></script>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -14,14 +17,14 @@
     <div class="login-box">
       <h1>PortalRH</h1>
       <form action="#">
-        <div class="form-group">
-          <input type="text" id="username" name="username" placeholder="Usuário">
-        </div>
-        <div class="form-group">
-          <input type="password" id="password" name="password" placeholder="Senha" class="icon">
-        </div>
-        <p>Esqueceu sua senha?<a class="contat-us" href="#" target="_blank"> Entre em contato</a></p>
-        <button type="submit">Entrar</button>
+        <input type="text" id="username" name="username" placeholder="Usuário" autocomplete="off">
+        <input type="password" id="password" name="password" placeholder="Senha" class="icon">
+        
+        <p class="message">Credenciais incorretas, tente novamente ou contate o suporte</p>
+
+        <p>Esqueceu sua senha?<a class="contat-us" href="#"> Entre em contato</a></p>
+        
+        <button type="button" id="enterButton">Entrar</button>
       </form>
     </div>
   </main>
