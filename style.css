@@ -43,15 +43,6 @@ main {
     object-fit: contain;
 }
 
-.centraliza-tela-de-login {
-    width: fit-content;
-    border: solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .login-box {
     height: 100%;
     display: flex;
